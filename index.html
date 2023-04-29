@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .main {
+            padding-top: 5vh;
+            padding-left: 15vw;
+            display: flex;
+        }
+
+        .He1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .T1 {
+            border-radius: 5%;
+            width: 30vw;
+            margin-right: 5vw;
+        }
+
+        .A1 {
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 5%;
+            background-color: rgb(61, 111, 189);
+            height: 60vh;
+            width: 100%;
+        }
+
+        .BB {
+            display: flex;
+        }
+
+        .B1 {
+            border: 1px black;
+            border-radius: 10px;
+            padding: 11px;
+            padding-left: 13px;
+            padding-right: 13px;
+            margin-top: 20px;
+            margin-left: 25%;
+            background-color: rgb(199, 189, 163);
+        }
+
+        .B1:hover {
+            text-decoration: underline;
+            background-color: rgb(173, 164, 141);
+
+        }
+
+        .T2 {
+            width: 30vw;
+        }
+
+        .A2 {
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 5%;
+            background-color: rgb(61, 111, 189);
+            height: 60vh;
+            width: 100%;
+        }
+
+        .B2 {
+            border: 1px;
+            border-radius: 10px;
+            padding: 11px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 20px;
+            margin-left: 45%;
+            background-color: rgb(111, 163, 207);
+        }
+
+        .B2:hover {
+            text-decoration: underline;
+            background-color: rgb(85, 123, 156);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="T1">
+            <h1 class="He1">User InPut</h1>
+
+            <textarea class="A1" name="" id="A1" cols="30" rows="10"></textarea>
+
+            <div class="BB">
+                <button class="B1" onclick="Bb1()">Upper Case</button>
+
+                <button class="B1" onclick="Bb2()">Lower Case</button>
+            </div>
+
+        </div>
+
+        <div class="T2">
+            <h1 class="He1">OutPut</h1>
+
+            <textarea class="A2" name="" id="A2" cols="30" rows="10"></textarea>
+
+            <button class="B2" onclick="Bc2()">Clear</button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function Bb1() {
+
+            let A = document.getElementById("A1").value;
+
+            let A1 = A.toUpperCase();
+
+            document.getElementById("A2").innerText = A1;
+        }
+        function Bb2() {
+
+            let A = document.getElementById("A1").value;
+
+            let A1 = A.toLowerCase();
+
+            document.getElementById("A2").innerText = A1;
+        }
+
+        function Bc2() {
+
+            document.getElementById("A2").innerText = "";
+        }
+
+    </script>
+
+</body>
+
+</html>
